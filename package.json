@@ -19,9 +19,10 @@
     "tronweb": "^2.0.30"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && npm run test",
     "build": "react-scripts build && npx rimraf docs && npx move-cli build docs",
-    "test": "react-scripts test",
+    "dev": "lite-server",
+    "test": "react-scripts test && lite-server",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
