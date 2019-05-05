@@ -1,6 +1,12 @@
 {
   "name": "crypto-cannabis-game-atm-by-kin-krishna-and-srinjoy",
+  "description": "rare dapp built on tron",
   "version": "0.1.0",
+  "engines": {
+  "node": "10.15.3",
+  "npm": "6.9.0",
+  "yarn": "1.15.2"
+  },
   "private": true,
   "dependencies": {
     "moment": "^2.22.2",
