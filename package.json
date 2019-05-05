@@ -1,15 +1,20 @@
 {
-  "name": "my-app",
+  "name": "crypto-cannabis-game-atm-by-kin-krishna-and-srinjoy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.3",
     "react": "^16.8.6",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "sweetalert2": "^7.28.4",
+    "tronweb": "^2.0.30"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npx rimraf docs && npx move-cli build docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -20,6 +25,7 @@
     "production": [
       ">0.2%",
       "not dead",
+      "not ie <= 11",
       "not op_mini all"
     ],
     "development": [
@@ -27,5 +33,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+  "babel-cli": "^6.26.0",
+  "babel-polyfill": "^6.26.0",
+  "babel-register": "^6.26.0",
+  "move-cli": "^1.2.0",
+  "rimraf": "^2.6.2",
+  "solc": "^0.4.25"
+}
 }
